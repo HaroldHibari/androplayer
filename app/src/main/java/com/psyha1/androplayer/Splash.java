@@ -10,8 +10,7 @@ import android.widget.ImageView;
 /**
  * Created by HaroldHibari on 25/11/2015.
  * In this file I create and animate a splash (loading) screen for the app.
- * I make use of the animation library to animate images I place
- * on the splash screen
+ * I make use of the animation library to animate images I place on the splash screen
  */
 public class Splash extends Activity {
 
@@ -27,12 +26,11 @@ public class Splash extends Activity {
         //load the animation I created: "rotate" and fade out effect
         final Animation anim = AnimationUtils.loadAnimation(getBaseContext(), R.anim.rotate);
         final Animation anim1 = AnimationUtils.loadAnimation(getBaseContext(), R.anim.abc_fade_out);
-        final Animation anim2 = AnimationUtils.loadAnimation(getBaseContext(), R.anim.abc_fade_in);
 
         //set animations to each specific image
-        logo.startAnimation(anim2);
         img.startAnimation(anim);
-        //set
+
+        //create a listener to switch to the main activity from the splash screen
         anim.setAnimationListener(new Animation.AnimationListener() {
 
             @Override
@@ -41,11 +39,11 @@ public class Splash extends Activity {
 
             @Override
             public void onAnimationEnd(Animation animation) {
-                img.startAnimation(anim1);
                 logo.startAnimation(anim1);
-                finish();
+                img.startAnimation(anim1);
                 Intent i = new Intent(getBaseContext(), MainActivity.class); //start the main app
                 startActivity(i);
+                Splash.this.finish();
             }
 
             @Override

@@ -1,6 +1,6 @@
 package com.psyha1.androplayer;
 
-import java.lang.reflect.Array;
+
 import java.util.ArrayList;
 
 import android.view.View;
@@ -19,21 +19,6 @@ public class MusicAdapter extends BaseAdapter {
 
     private ArrayList<Music> musics;
     private LayoutInflater musicInfo;
-
-    @Override
-    public int getCount() {
-        return musics.size();
-    }
-
-    @Override
-    public Object getItem(int m) {
-        return null;
-    }
-
-    @Override
-    public long getItemId(int m) {
-        return 0;
-    }
 
     @Override
     public View getView(int pos, View convertView, ViewGroup parent) {
@@ -61,6 +46,23 @@ public class MusicAdapter extends BaseAdapter {
         musics = theMusic;
         musicInfo = LayoutInflater.from(c);
     }
+
+
+    @Override
+    public int getCount() {
+        return musics.size();
+    }
+
+    @Override
+    public Object getItem(int m) {
+        return null;
+    }
+
+    @Override
+    public long getItemId(int m) {
+        return 0;
+    }
+
 
 }
 

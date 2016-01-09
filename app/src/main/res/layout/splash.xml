@@ -18,7 +18,8 @@
         android:layout_width="328dp"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:src="@drawable/load" />
+        android:src="@drawable/load"
+        android:background="#00000000"/>
 
 
 </LinearLayout>

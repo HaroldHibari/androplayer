@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">AndroPlayer</string>
     <string name="shuffle">Shuffle</string>
-    <string name="search">Search</string>
+    <string name="close">Close</string>
+    <string name="repeat_one">Repeat one song</string>
+    <string name="details">Show/Hide Music controller</string>
+    <string name="label">Select song</string>
 </resources>

@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     android:onClick="musicPicked"
     android:orientation="vertical"
-    android:padding="5dp">
+    android:padding="3dp">
 
     <TextView
         android:id="@+id/music_name"
